@@ -209,14 +209,3 @@ Works
     background-image: url(../iamges/bg1.png);
     background-position: center;
 }
-
-.sticky {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
