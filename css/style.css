@@ -5,7 +5,7 @@
 ============================================ */
 a {
     text-decoration: none;
-    color: #000;
+    color: #333;
 }
 
 .wrapper {
@@ -78,7 +78,7 @@ header {
 }
 
 #g-nav.panelactive #g-nav-list{
-     display: block; /*クラスが付与されたら出現*/
+    display: block; /*クラスが付与されたら出現*/
 }
 
 /*ナビゲーション*/
@@ -151,7 +151,7 @@ header {
     left: 14px;
     height: 3px;
     border-radius: 2px;
-    background-color: #666;
+    background-color: #333;
     width: 45%;
 }
 
@@ -198,7 +198,7 @@ About
 ============================================ */
 
 .about__img__box {
-    width: 20vw; /* プロフ画像のwidth設定 */
+    width: 50vw; /* プロフ画像のwidth設定 */
 }
 
 /* ===========================================
