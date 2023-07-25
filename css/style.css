@@ -135,9 +135,9 @@ opacity: 1;
 
 /*========= ボタンのためのCSS ===============*/
 .openbtn{
-	position: relative;
-	z-index: 9999;/*ボタンを最前面に*/
-	cursor: pointer;
+    position: relative;
+    z-index: 9999;/*ボタンを最前面に*/
+    cursor: pointer;
     width: 50px;
     height:50px;
 }
@@ -150,20 +150,20 @@ opacity: 1;
     left: 14px;
     height: 3px;
     border-radius: 2px;
-	background-color: #666;
-  	width: 45%;
+    background-color: #666;
+    width: 45%;
   }
 
 .openbtn span:nth-of-type(1) {
-	top:15px;
+    top:15px;
 }
 
 .openbtn span:nth-of-type(2) {
-	top:23px;
+    top:23px;
 }
 
 .openbtn span:nth-of-type(3) {
-	top:31px;
+    top:31px;
 }
 
 .openbtn.active span:nth-of-type(1) {
@@ -174,7 +174,7 @@ opacity: 1;
 }
 
 .openbtn.active span:nth-of-type(2) {
-	opacity: 0;
+    opacity: 0;
 }
 
 .openbtn.active span:nth-of-type(3){
