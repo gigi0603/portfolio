@@ -9,7 +9,7 @@ a {
 }
 
 .wrapper {
-    max-width: 414px;
+    max-width: 768px;
     margin: 0 auto;
 }
 
@@ -190,6 +190,9 @@ main {
 /* ===========================================
 About
 ============================================ */
+.about {
+    padding-top: 12rem;
+}
 
 .about__imgBox {
     max-width: 100%; /* プロフ画像のwidth設定 */
