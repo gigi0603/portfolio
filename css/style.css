@@ -9,6 +9,9 @@ html {
 
 body {
     color: #333;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    /* word-break: break-all; */
 }
 
 a {
@@ -220,6 +223,11 @@ Catch
 .catch {
     padding-top: 10vw;
     height: 100vh;
+}
+
+.catch__copy {
+    font-weight: bold;
+    font-size: 50px;
 }
 
 /* ===========================================
