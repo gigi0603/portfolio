@@ -199,7 +199,6 @@ h2 {
     position: sticky;/* //背景画像を固定 */
     top: 0;
     left: 0;
-    z-index: -1;/* //z軸位置指定 */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -207,6 +206,12 @@ h2 {
 
 .bg1 {
     background-image: url(../iamges/zakka3.png);
+    z-index: -2;
+}
+
+.bg2 {
+    background-image: url(../iamges/bg2.jpg);
+    z-index: -1;
 }
 
 /* ===========================================
@@ -317,4 +322,13 @@ Works
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 8vw;
     padding: 8vw;
+}
+
+
+/* ===========================================
+Footer
+============================================ */
+footer {
+    padding: 3vw 3vw 8vw 3vw;
+    text-align: center;
 }
