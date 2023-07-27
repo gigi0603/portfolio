@@ -28,15 +28,6 @@ img {
     width: 100%;
 }
 
-
-header {
-    position: fixed;
-    width: 100%;
-    padding: 3vw;
-    display: flex;
-    justify-content: space-between;
-}
-
 h2 {
     font-size: 80px;
 }
@@ -208,6 +199,17 @@ h2 {
 
 .bg1 {
     background-image: url(../iamges/zakka3.png);
+}
+
+/* ===========================================
+Header
+============================================ */
+header {
+    position: fixed;
+    width: 100%;
+    padding: 3vw;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* ===========================================
