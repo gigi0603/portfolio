@@ -206,12 +206,13 @@ h2 {
 
 .bg1 {
     background-image: url(../iamges/zakka3.png);
-    z-index: -2;
+    z-index: -1;
 }
 
 .bg2 {
     background-image: url(../iamges/bg2.jpg);
     z-index: -1;
+    height: 100vh;
 }
 
 /* ===========================================
