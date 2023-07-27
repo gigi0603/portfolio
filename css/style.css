@@ -288,7 +288,25 @@ About
     padding: 8vw;
 }
 
+@media(min-width:769px) {
+    .about__flex {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px,1fr));
+        gap: 3vw;
+        padding: 8vw;
+    }
+    .about__imgBox {
+        padding: 0;
+    }
 
+    .atout__dl div {
+        display: flex;
+    }
+
+    .atout__dl div dt {
+        padding-right: 20px;
+    }
+}
 /* ===========================================
 Works
 ============================================ */
