@@ -33,7 +33,7 @@ img {
 
 section {
     background-color: #fff;
-    padding-bottom: 5vw;
+    padding: 5vw 0;
 }
 
 h2 {
@@ -281,19 +281,33 @@ Catch
 ============================================ */
 .catch {
     margin-top: 20vw;
-    height: 100vh;
+    height: 60vh;
 }
 
 .catch__copy {
     font-size: 50px;
 }
 
+@media(min-width:769px) {
+    .catch {
+        height: 100vh;
+    }
+}
+
+
+
+
 /* ===========================================
 About
 ============================================ */
+.atout__dl,
 .about__imgBox {
     max-width: 100%; /* プロフ画像のwidth設定 */
     padding: 8vw;
+}
+
+.about__text {
+    padding: 3vw;
 }
 
 @media(min-width:769px) {
@@ -301,7 +315,6 @@ About
         display: grid;
         grid-template-columns: repeat(2, minmax(100px,1fr));
         gap: 3vw;
-        padding: 8vw;
     }
     .about__imgBox {
         padding: 0;
