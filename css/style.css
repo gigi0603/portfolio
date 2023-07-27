@@ -212,9 +212,14 @@ h2 {
 
 .bg2 {
     background-image: url(../iamges/bg2.jpg);
-    z-index: -1;
     height: 100vh;
+    z-index: -1;
 }
+
+/* .bg3 {
+    background-image: url(../iamges/bear.jpg);
+    z-index: -1.5;
+} */
 
 /* ===========================================
 Header
