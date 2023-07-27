@@ -30,6 +30,10 @@ img {
     width: 100%;
 }
 
+section {
+    background-color: #fff;
+}
+
 h2 {
     font-size: 80px;
 }
@@ -288,10 +292,6 @@ About
 /* ===========================================
 Works
 ============================================ */
-.works {
-    background-color: #fff;
-}
-
 .works__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
