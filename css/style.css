@@ -204,6 +204,7 @@ header {
 .bg1 {
     background-image: url(../iamges/zakka.png);
 }
+
 /* ===========================================
 Main
 ============================================ */
@@ -235,6 +236,7 @@ Works
 
 .works__container {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 8vw;
     padding: 8vw;
 }
