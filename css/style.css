@@ -53,12 +53,12 @@ h2 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: #999;
+    background-color: rgba(255,255,255,.8);
     /*丸のスタート位置と形状*/
     transform: scale(0);/*scaleをはじめは0に*/
     left:-50px;
     bottom:-50px;
-    transition: all .6s;/*0.6秒かけてアニメーション*/
+    transition: all .7s;/*0.6秒かけてアニメーション*/
 }
 
 .circle-bg.circleactive{
@@ -212,6 +212,10 @@ header {
     justify-content: space-between;
 }
 
+.title {
+    font-weight: 500;
+}
+
 /* ===========================================
 Main
 ============================================ */
@@ -223,7 +227,7 @@ main {
 Catch
 ============================================ */
 .catch {
-    padding-top: 10vw;
+    margin-top: 20vw;
     height: 100vh;
 }
 
