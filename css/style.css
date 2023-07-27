@@ -236,7 +236,7 @@ header {
 
 /* 回転前 */
 .title__link span:nth-child(1) {
-    color: #000;
+    color: #333;
     transform: rotateX(0deg);/*はじめは回転なし*/
     transform-origin: 0 50%  -25px;/* 回転する起点 */
 }
