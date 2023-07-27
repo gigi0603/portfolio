@@ -296,7 +296,7 @@ Catch
 
 @media(min-width:769px) {
     .catch {
-        height: 100vh;
+        margin-top: 18vh;
     }
 }
 
