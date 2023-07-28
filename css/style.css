@@ -310,10 +310,13 @@ Catch
 /* ===========================================
 About
 ============================================ */
-.atout__dl,
 .about__imgBox {
-    max-width: 100%; /* プロフ画像のwidth設定 */
+    max-width: 450px; /* プロフ画像のwidth設定 */
     padding: 8vw;
+}
+
+.atout__dl {
+    padding: 3vw;
 }
 
 .about__text {
