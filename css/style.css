@@ -204,7 +204,7 @@ h2 {
 ============================================ */
 .parallax {
     width: 100%; /* 背景画像の横幅 */
-    height: 240px; /* //背景画像の高さ */
+    height: 400px; /* //背景画像の高さ */
     position: sticky;/* //背景画像を固定 */
     top: 0;
     left: 0;
@@ -216,18 +216,26 @@ h2 {
 .bg1 {
     background-image: url(../iamges/zakka3.png);
     z-index: -1;
-    background-size: contain;
+    background-position: left;
 }
 
 .bg2 {
     background-image: url(../iamges/bg2.jpg);
     z-index: -1;
-    background-size: contain;
+    height: 320px;
+    background-position: bottom;
 }
 
 .bg3 {
     background-image: url(../iamges/bg3.jpg);
     z-index: -1;
+}
+
+@media(min-width:769px) {
+    .parallax {
+        height: 100vh;
+    }
+
 }
 /* ===========================================
 Header
