@@ -320,6 +320,7 @@ About
 
 .about__imgBox {
     padding: 8vw;
+    text-align: center;
 }
 
 .about__img {
@@ -349,6 +350,7 @@ About
 
 .about__text {
     padding: 3vw;
+    line-height: 1.8;
 }
 
 @media(min-width:769px) {
