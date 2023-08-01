@@ -203,8 +203,8 @@ h2 {
 パララックス
 ============================================ */
 .parallax {
-    width: 100%;/* 背景画像の横幅 */
-    height: 400px;/* //背景画像の高さ */
+    width: 100%; /* 背景画像の横幅 */
+    height: 240px; /* //背景画像の高さ */
     position: sticky;/* //背景画像を固定 */
     top: 0;
     left: 0;
@@ -216,14 +216,19 @@ h2 {
 .bg1 {
     background-image: url(../iamges/zakka3.png);
     z-index: -1;
+    background-size: contain;
 }
 
 .bg2 {
     background-image: url(../iamges/bg2.jpg);
-    height: 100vh;
     z-index: -1;
+    background-size: contain;
 }
 
+.bg3 {
+    background-image: url(../iamges/bg3.jpg);
+    z-index: -1;
+}
 /* ===========================================
 Header
 ============================================ */
