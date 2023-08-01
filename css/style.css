@@ -231,6 +231,11 @@ h2 {
     z-index: -1;
 }
 
+.bg4 {
+    background-image: url(../iamges/bg4.jpg);
+    z-index: -1;
+}
+
 @media(min-width:769px) {
     .parallax {
         height: 100vh;
