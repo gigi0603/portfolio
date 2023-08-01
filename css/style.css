@@ -220,7 +220,7 @@ h2 {
 }
 
 .bg2 {
-    background-image: url(../iamges/bg4.jpg);
+    background-image: url();
     z-index: -1;
 }
 
@@ -230,7 +230,7 @@ h2 {
 }
 
 .bg4 {
-    background-image: url(../iamges/bg4.jpg);
+    background-image: url(../iamges/bg44.png);
     z-index: -1;
 }
 
@@ -386,6 +386,11 @@ About
         margin: auto 0;
     }
 }
+
+@media(min-width:426px) {
+
+}
+
 /* ===========================================
 Works
 ============================================ */
