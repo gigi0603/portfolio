@@ -45,6 +45,7 @@ section {
 h2 {
     font-size: 80px;
 }
+
 /* ===========================================
 ナビゲーションのためのCSS 
 ============================================ */
@@ -55,6 +56,7 @@ h2 {
     position:fixed;
     z-index: 999;
     top: 0;
+    left: 0;
     width:100%;
     height: 100vh;
 }
@@ -72,6 +74,7 @@ h2 {
     transform: scale(0);/*scaleをはじめは0に*/
     left:-50px;
     bottom:-50px;
+    transform: translate(-50%,-50%);
     transition: all .7s;/*0.6秒かけてアニメーション*/
 }
 
@@ -83,7 +86,7 @@ h2 {
 #g-nav-list{
     display: none;/*はじめは表示なし*/
     /*ナビの数が増えた場合縦スクロール*/
-    position: fixed;
+    position: relative;
     z-index: 999; 
     width: 100%;
     height: 100vh;
@@ -145,7 +148,6 @@ h2 {
     font-weight: 500;
     font-size: 25px;
 }
-
 
 /*========= ボタンのためのCSS ===============*/
 .openbtn{
