@@ -283,8 +283,8 @@ main {
 Catch
 ============================================ */
 .catch {
-    margin-top: 30vw;
-    height: 60vh;
+    margin-top: 32vw;
+    height: 64vh;
 }
 
 .catch__copy {
@@ -299,6 +299,7 @@ Catch
 @media(min-width:769px) {
     .catch {
         margin-top: 25vh;
+        height: 60vh;
     }
 
     .catch__copy {
@@ -363,7 +364,7 @@ Skill
 .skill__dl {
     display: grid;
     gap: 5vw;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     padding: 5vw 2vw;
 }
 
