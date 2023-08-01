@@ -23,6 +23,10 @@ a {
     color: #333;
 }
 
+a:hover {
+    opacity: .8;
+}
+
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
@@ -318,6 +322,10 @@ About
     padding: 8vw;
 }
 
+.about__img {
+    max-width: 450px;
+}
+
 .atout__dl {
     padding: 3vw;
 }
@@ -326,16 +334,17 @@ About
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 1vw 0;
+    margin-bottom: 1vw;
 }
 
 .atout__dl div dt {
     font-size: 1.17em;
     font-weight: 500;
-    width: 70px;
+    width: 4.375rem;
 }
 
 .atout__dl div dd {
+    width: 20rem;
 }
 
 .about__text {
