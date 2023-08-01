@@ -328,7 +328,7 @@ About
 }
 
 .atout__dl {
-    padding: 3vw;
+    padding: 5vw;
 }
 
 .about__item {
@@ -349,7 +349,7 @@ About
 }
 
 .about__text {
-    padding: 3vw;
+    padding: 5vw;
     line-height: 1.8;
 }
 
@@ -361,6 +361,11 @@ About
     }
     .about__imgBox {
         padding: 0;
+    }
+
+    .about__me {
+        max-height: 792px;
+        margin: auto 0;
     }
 }
 /* ===========================================
