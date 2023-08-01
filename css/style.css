@@ -30,6 +30,7 @@ a {
 
 img {
     width: 100%;
+    vertical-align: bottom;
 }
 
 section {
@@ -352,6 +353,28 @@ Works
     padding: 8vw;
 }
 
+/* ===========================================
+Skill
+============================================ */
+.skill {
+    background-color: #fff;
+}
+
+.skill__dl {
+    display: grid;
+    gap: 5vw;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    padding: 5vw 2vw;
+}
+
+.skill__type {
+    font-size: 0.875rem;
+}
+
+.skill__type dt {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
 
 /* ===========================================
 Footer
