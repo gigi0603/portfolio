@@ -312,6 +312,7 @@ Catch
 .catch__copy {
     font-size: 2.5rem;
     font-weight: bold;
+
 }
 
 .catch__box p:nth-child(2) {
@@ -387,9 +388,6 @@ About
     }
 }
 
-@media(min-width:426px) {
-
-}
 
 /* ===========================================
 Works
