@@ -220,10 +220,8 @@ h2 {
 }
 
 .bg2 {
-    background-image: url(../iamges/bg2.jpg);
+    background-image: url(../iamges/bg4.jpg);
     z-index: -1;
-    height: 320px;
-    background-position: bottom;
 }
 
 .bg3 {
