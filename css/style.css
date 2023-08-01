@@ -501,6 +501,10 @@ Skill
 /* ===========================================
 Contact
 ============================================ */
+.contact {
+    height: 100vh;
+}
+
 .contact__mail {
     display: block;
     padding: 8vw;
