@@ -322,6 +322,22 @@ About
     padding: 3vw;
 }
 
+.about__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1vw 0;
+}
+
+.atout__dl div dt {
+    font-size: 1.17em;
+    font-weight: 500;
+    width: 70px;
+}
+
+.atout__dl div dd {
+}
+
 .about__text {
     padding: 3vw;
 }
@@ -334,14 +350,6 @@ About
     }
     .about__imgBox {
         padding: 0;
-    }
-
-    .atout__dl div {
-        display: flex;
-    }
-
-    .atout__dl div dt {
-        padding-right: 20px;
     }
 }
 /* ===========================================
