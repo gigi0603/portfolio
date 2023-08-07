@@ -23,9 +23,9 @@ a {
     color: #333;
 }
 
-a:hover {
+/* a:hover {
     opacity: .8;
-}
+} */
 
 .wrapper {
     max-width: 1280px;
@@ -246,13 +246,101 @@ header {
 }
 
 /* ===========================================
-Main
+矢印が右に移動して背景がつく
 ============================================ */
+.btnarrow5{
+    /*矢印の基点とするためrelativeを指定*/
+	position: relative;
+    /*ボタンの形状*/
+	border: 1px solid #555;
+    padding: 8px 30px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    outline: none;
+    /*アニメーションの指定*/
+    transition: all .2s linear;
+}
+
+.btnarrow5:hover{
+	background:#333;
+	color:#fff;
+}
+
+/*矢印と下線の形状*/
+.btnarrow5::before{
+	content:"";
+    /*絶対配置で下線の位置を決める*/
+	position: absolute;
+	top:50%;
+	right:-26px;
+    /*下線の形状*/
+	width:40px;
+	height:1px;
+	background:#333;
+    /*アニメーションの指定*/
+    transition: all .2s linear;
+}
+
+.btnarrow5::after{
+	content:"";
+    /*絶対配置で矢印の位置を決める*/
+	position: absolute;
+    top: 20%;
+    right: -21px;
+    /*矢印の形状*/
+	width:1px;
+	height:12px;
+	background:#333;
+    transform:skewX(45deg);
+    /*アニメーションの指定*/
+    transition: all .2s linear;
+}
+
+/*hoverした際の移動*/
+.btnarrow5:hover::before{
+	right:-30px;
+}
+
+.btnarrow5:hover::after{
+	right:-25px;
+}
+
+
+/* ===========================================
+Works
+============================================ */
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .works {
-    padding: 3vw 0;
+    padding: 5vw 3vw;
     margin-top: 80px;
 }
 
+.works__imgBox {
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.link {
+    text-align: center;
+}
+
+.title {
+    margin-top: 3vw;
+}
+
+.time {
+    display: block;
+}
 /* ===========================================
 Footer
 ============================================ */
