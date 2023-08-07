@@ -345,7 +345,7 @@ header {
     transition: 0.5s;
 }
 
-/*== くるっと回転（奥に） */
+/*================== くるっと回転（奥に） ================*/
 
 /* 回転前 */
 .title__link span:nth-child(1) {
@@ -368,6 +368,10 @@ header {
 /*hoverをした後の形状*/
 .title__link:hover span:nth-child(2) {
     transform: rotateX(0deg);/* X軸に0度回転 */
+}
+
+.title__link:hover {
+    opacity: 100;
 }
 
 /* ===========================================
