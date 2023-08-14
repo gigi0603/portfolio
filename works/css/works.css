@@ -337,11 +337,11 @@ h2 {
     font-weight: 400;
 }
 
-.link {
+.works__link {
     text-align: center;
 }
 
-.time {
+.works__time {
     display: block;
     font-family: "input-serif-compressed", serif;
     font-weight: 200;
