@@ -328,7 +328,8 @@ Works
 }
 
 .works__imgBox {
-    margin: 0 auto;
+    margin: 0 auto 24px;
+    max-width: 700px;
 }
 
 h2 {
