@@ -342,6 +342,9 @@ h2 {
 
 .time {
     display: block;
+    font-family: "input-serif-compressed", serif;
+    font-weight: 200;
+    font-style: normal;
 }
 /* ===========================================
 Footer
@@ -349,4 +352,7 @@ Footer
 footer {
     padding: 3vw 3vw 8vw 3vw;
     text-align: center;
+    font-family: "input-serif-compressed", serif;
+    font-weight: 200;
+    font-style: normal;
 }
