@@ -343,6 +343,7 @@ h2 {
 }
 
 .works__time {
+    margin-top: 8px;
     display: block;
     font-family: "input-serif-compressed", serif;
     font-weight: 200;
