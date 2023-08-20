@@ -405,6 +405,15 @@ Works
     padding: 8vw;
 }
 
+.works__img {
+    height: auto;
+    transition: transform .3s ease; /* ゆっくり変化させる */
+}
+
+.works__img:hover {
+    transform: scale(1.1); /* 拡大 */
+}
+
 /* ===========================================
 Skill
 ============================================ */
