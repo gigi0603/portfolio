@@ -231,14 +231,21 @@ h2 {
 
 .bg4 {
     background-image: url(../iamges/bg5.jpg);
-    z-index: -1;
+    width: 100%; /* 背景画像の横幅 */
+    height: 380px; /* //背景画像の高さ */
+    background-size: cover;
+    z-index: 1;
+    background-position: right bottom;
 }
 
 @media(min-width:769px) {
     .parallax {
-        height: 100vh;
+        height: 80vh;
     }
 
+    .bg4 {
+        height: 550px;
+    }
 }
 /* ===========================================
 Header
