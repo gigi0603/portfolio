@@ -385,6 +385,10 @@ About
     line-height: 1.8;
 }
 
+.about__flex {
+    padding: 5vw 0;
+}
+
 @media(min-width:769px) {
     .about__flex {
         display: grid;
