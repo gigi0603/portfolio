@@ -361,6 +361,7 @@ About
 
 .atout__dl {
     padding: 5vw;
+    font-size: 1.25rem;
 }
 
 .about__item {
@@ -437,10 +438,6 @@ Skill
     gap: 5vw;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 5vw;
-}
-
-.skill__type {
-    font-size: 0.875rem;
 }
 
 .skill__type dt {
