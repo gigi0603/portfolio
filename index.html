@@ -169,7 +169,41 @@
         <!-- contact -->
         <section class="contact">
             <h2 id="contact" class="wrapper">Contact</h2>
-            <p class="contact__mail wrapper">Please&nbsp;send&nbsp;mail&lt;3aaaaaaa@gmail.com</p>
+            <p class="contact__mail-p wrapper">Please&nbsp;send&nbsp;mail&lt;3aaaaaaa@gmail.com</p>
+
+            <form action="#" method="post" name="form" id="c-form__box" class="c-form__box">
+                <dl class="c-form__list">
+                    <div class="c-form__item">
+                        <dt class="c-form__name-dt"><label for="form-name"><span class="c-form__req">（必須）</span><br>名前</label></dt>
+                        <dd class="c-form__name-dd">
+                            <input type="text" name="name" id="form-name" required>
+                        </dd>
+                    </div>
+                    <div class="c-form__item">
+                        <dt class="c-form__mail-dt"><label for="form-email"><span class="c-form__req">（必須）</span><br>メールアドレス</label></dt>
+                        <dd class="c-form__mail-dd">
+                            <input type="email" name="email" id="form-email" required>
+                        </dd>
+                    </div>
+                    <div class="c-form__item">
+                        <dt class="c-form__tel-dt"><label for="form-tel">電話番号</label></dt>
+                        <dd class="c-form__tel-dd">
+                            <input type="tel" name="TEL" id="form-tel">
+                        </dd>
+                    </div>
+                    <div class="c-form__item">
+                        <dt class="c-form__textarea-dt"><label for="form-textarea"><span class="c-form__req">（必須）</span><br>内容</label></dt>
+                        <dd class="c-form__textarea-dd">
+                            <textarea name="メッセージ" id="form-textarea" required></textarea>
+                        </dd>
+                    </div>
+                </dl>
+                <div class="c-form__btnBox">
+                    <input type="reset" value="リセット">
+                    <button type="submit" class="c-form__btn">確認</button>
+                </div>
+                <!--/.c-form__btnBox  -->
+            </form>
         </section>
 
         <!-- パララックス -->

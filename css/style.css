@@ -384,6 +384,7 @@ About
 .about__text {
     padding: 5vw;
     line-height: 1.8;
+    font-size: 1.125rem;
 }
 
 .about__flex {
@@ -452,7 +453,7 @@ Contact
     height: 60vh;
 }
 
-.contact__mail {
+.contact__mail-p {
     display: block;
     padding: 8vw;
 }
@@ -462,6 +463,8 @@ Contact
         height: 100vh;
     }
 }
+
+
 
 /* ===========================================
 Footer
