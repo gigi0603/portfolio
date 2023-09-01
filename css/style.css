@@ -438,7 +438,7 @@ Skill
 
 .skill__dl {
     display: grid;
-    gap: 5vw;
+    gap: 13vw;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 5vw;
 }
@@ -446,6 +446,17 @@ Skill
 .skill__type dt {
     font-weight: 700;
     font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.skill__dl dd {
+    line-height: 2;
+}
+
+@media(min-width:769px) {
+    .skill__dl {
+        gap: 5vw;
+    }
 }
 
 /* ===========================================
