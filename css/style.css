@@ -361,8 +361,9 @@ About
 }
 
 .atout__dl {
-    padding: 5vw;
+    padding: 2vw 5vw;
     font-size: 1.25rem;
+    border-bottom: 1px solid #333;
 }
 
 .about__item {
@@ -383,7 +384,7 @@ About
 }
 
 .about__text {
-    padding: 5vw;
+    padding: 2vw 5vw;
     line-height: 1.8;
     font-size: 1.125rem;
 }
