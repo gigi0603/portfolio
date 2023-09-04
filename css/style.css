@@ -471,9 +471,15 @@ Contact
     height: 60vh;
 }
 
-.contact__mail-p {
+.contact__mailBox {
     display: block;
     padding: 8vw;
+}
+
+.contact__mail {
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
 }
 
 @media(min-width:769px) {
