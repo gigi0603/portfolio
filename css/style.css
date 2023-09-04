@@ -49,37 +49,37 @@ h2 {
 /* ===========================================
 ナビゲーションのためのCSS 
 ============================================ */
-
-/*アクティブになったエリア*/
-#g-nav.panelactive{
+#g-nav{
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
     position:fixed;
     z-index: 999;
-    top: 0;
-    left: 0;
-    width:100%;
+    /*ナビのスタート位置と形状*/
+	top: -120%;
+    right: 0;
+	width: 100%;
     height: 100vh;
+	background:#fff;
+    /*動き*/
+	transition: all 0.6s;
 }
 
-/*丸の拡大*/
-.circle-bg{
-    position: fixed;
-    z-index:3;
-    /*丸の形*/
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: rgba(255,255,255,.8);
-    /*丸のスタート位置と形状*/
-    transform: scale(0);/*scaleをはじめは0に*/
-    left:-50px;
-    bottom:-50px;
-    transform: translate(-50%,-50%);
-    transition: all .7s;/*0.6秒かけてアニメーション*/
+@media(min-width:769px) {
+    #g-nav {
+        top: 0;
+        right: -120%;
+        width: 40%;
+    }
 }
 
-.circle-bg.circleactive{
-    transform: scale(50);/*クラスが付与されたらscaleを拡大*/
+/*アクティブになったエリア*/
+#g-nav.panelactive{
+    top: 0;
+}
+
+@media(min-width:769px) {
+    #g-nav.panelactive{
+        right: 0;
+    }
 }
 
 /*ナビゲーションの縦スクロール*/
@@ -88,7 +88,7 @@ h2 {
     /*ナビの数が増えた場合縦スクロール*/
     position: relative;
     z-index: 999; 
-    width: 100%;
+	width: 100%;
     height: 100vh;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -118,7 +118,7 @@ h2 {
 #g-nav.panelactive ul li{
     animation-name:gnaviAnime;
     animation-duration:1s;
-    animation-delay:.2s;/*0.2 秒遅らせて出現*/
+    animation-delay:.2s; /* 0.2秒遅れて */
     animation-fill-mode:forwards;
     opacity:0;
 }
