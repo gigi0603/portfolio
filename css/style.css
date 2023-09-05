@@ -79,6 +79,7 @@ h2 {
 @media(min-width:769px) {
     #g-nav.panelactive{
         right: 0;
+        border-left: 3px solid #333;
     }
 }
 
