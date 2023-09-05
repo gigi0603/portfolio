@@ -468,7 +468,7 @@ Skill
 Contact
 ============================================ */
 .contact {
-    height: 60vh;
+    height: 100vh;
 }
 
 .contact__mailBox {
@@ -476,15 +476,33 @@ Contact
     padding: 8vw;
 }
 
+.contact__message {
+    font-size: 1.375rem;
+}
+
 .contact__mail {
-    font-size: 2.2rem;
-    font-weight: 600;
+    font-size: 1.375rem;
+    font-weight: 700;
     letter-spacing: 0.05em;
 }
 
 @media(min-width:769px) {
     .contact {
         height: 100vh;
+    }
+
+    .contact__mail {
+        color: #fff;
+        font-size: min(5vw, 8.0rem);
+        text-shadow: 0 5px 0 #333, 0 5px 0 #333, -2px 0 0 #333, 0 -2px 0 #333;
+        transition-property: color, text-shadow;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+    .contact__mail:hover {
+        opacity: 1;
+        color: #333;
+        text-shadow: none;
     }
 }
 
