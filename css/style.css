@@ -23,10 +23,6 @@ a {
     color: #333;
 }
 
-a:hover {
-    opacity: .8;
-}
-
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
@@ -427,7 +423,7 @@ Works
 }
 
 .works__img:hover {
-    transform: scale(1.1); /* 拡大 */
+    transform: scale(.95,.95); /* 拡大 */
 }
 
 .works__category {
@@ -515,4 +511,5 @@ Footer
 footer {
     padding: 3vw 3vw 8vw 3vw;
     text-align: center;
+    font-family: "input-serif-compressed", serif;
 }
