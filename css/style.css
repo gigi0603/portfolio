@@ -278,6 +278,11 @@ header {
 }
 
 /*== ボタン共通設定 */
+.title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
 .title__btn {
     width: 100%;
 }
@@ -332,35 +337,21 @@ main {
 }
 
 /* ===========================================
-Catch
+mainvisual
 ============================================ */
-.catch {
+.mainvisual {
     margin-top: 32vw;
     height: 64vh;
 }
 
-.catch__copy {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
 
-.catch__box p:nth-child(2) {
-    margin-bottom: 1rem;
-    font-family: "input-serif-compressed", serif;
-    font-weight: 200;
-    font-style: normal;
-
-}
 
 @media(min-width:769px) {
-    .catch {
+    .mainvisual {
         margin-top: 25vh;
         height: 60vh;
     }
 
-    .catch__copy {
-        font-size: 5.3rem;
-    }
 }
 
 
@@ -403,7 +394,7 @@ About
 
 .about__text {
     padding: 2vw 5vw;
-    line-height: 1.8;
+    line-height: 2;
     font-size: 1.125rem;
 }
 
@@ -459,6 +450,23 @@ Skill
     background-color: #fff;
 }
 
+.skill__copy {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.skill__box {
+    padding: 5vw;
+}
+
+.skill__box p:nth-child(2) {
+    margin-bottom: 1rem;
+    font-family: "input-serif-compressed", serif;
+    font-weight: 200;
+    font-style: normal;
+
+}
+
 .skill__dl {
     display: grid;
     gap: 13vw;
@@ -479,6 +487,10 @@ Skill
 @media(min-width:769px) {
     .skill__dl {
         gap: 5vw;
+    }
+
+    .skill__copy {
+        font-size: 3.2rem;
     }
 }
 
