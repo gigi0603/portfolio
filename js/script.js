@@ -6,4 +6,6 @@ $(".openbtn").click(function () {//ボタンがクリックされたら
   $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
       $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
       $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去
+
+      
   });

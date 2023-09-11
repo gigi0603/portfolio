@@ -417,13 +417,15 @@ h2 {
 
     .works__hp{
         position: sticky;
-        top: 150px;
+        top: 200px;
+        left: 0;
         height: 60vh;
         z-index: 1;
+        width: 45%;
     }
 
     .works__box {
-        width: 80%;
+        width: 55%;
     }
 
     .works__head,
