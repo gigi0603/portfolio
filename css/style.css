@@ -38,7 +38,13 @@ section {
 }
 
 h2 {
-    font-size: 80px;
+    font-size: 10vw;
+}
+
+@media(min-width:769px) {
+    h2 {
+        font-size: 80px;
+    }
 }
 
 /* ===========================================
@@ -340,18 +346,54 @@ main {
 mainvisual
 ============================================ */
 .mainvisual {
-    margin-top: 32vw;
-    height: 64vh;
+    margin-block: 30vh;
 }
 
+.mainvisual__box {
+    padding: 7vw 0;
+    display: grid;
+    gap: 8vw;
+}
 
+.mainvisual__name {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 0 3vw;
+}
+
+.mainvisual__item {
+    width: 60%;
+    margin: auto;
+    font-weight: 700;
+    padding: 0 3vw;
+}
+
+.mainvisual__item2 {
+    width: 60%;
+    padding: 0 3vw;
+    text-align: center;
+    font-weight: 700;
+    margin: auto;
+}
 
 @media(min-width:769px) {
     .mainvisual {
-        margin-top: 25vh;
-        height: 60vh;
+        margin-block: 15vh;
     }
 
+    .mainvisual__box {
+        gap: 5vw;
+    }
+    
+    .mainvisual__name {
+        width: 80%;
+    }
+
+    .mainvisual__item,
+    .mainvisual__item2 {
+        width: 46%;
+    }
 }
 
 
