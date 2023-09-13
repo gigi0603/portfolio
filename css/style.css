@@ -477,7 +477,7 @@ Works
 }
 
 .works__img:hover {
-    transform: scale(.95,.95); /* 拡大 */
+    transform: scale(.95,.95); /* 縮小 */
 }
 
 .works__category {
@@ -564,17 +564,19 @@ Contact
     }
 
     .contact__mail {
-        color: #fff;
+        color: #333;
         font-size: min(5vw, 8.0rem);
-        text-shadow: 0 5px 0 #333, 0 5px 0 #333, -2px 0 0 #333, 0 -2px 0 #333;
-        transition-property: color, text-shadow;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-in-out;
+        text-shadow: 5px 5px 5px #727272;
+        transition: 0.3s;
+        display: inline-block;
     }
+
     .contact__mail:hover {
         opacity: 1;
         color: #333;
-        text-shadow: none;
+        text-shadow: 0 0 0 #727272;
+        transform: translateY(5px);
+        transform: translatex(5px);
     }
 }
 
