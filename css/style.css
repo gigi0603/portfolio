@@ -237,7 +237,7 @@ h2 {
     width: 100%; /* 背景画像の横幅 */
     height: 380px; /* //背景画像の高さ */
     background-size: cover;
-    z-index: 1;
+    z-index: -1;
     background-position: right bottom;
 }
 
@@ -285,7 +285,7 @@ header {
 
 /*== ボタン共通設定 */
 .title {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
 }
 
@@ -403,18 +403,21 @@ mainvisual
 About
 ============================================ */
 .about__imgBox {
-    padding: 8vw;
     text-align: center;
 }
 
 .about__img {
-    max-width: 450px;
+    max-width: 400px;
+}
+
+.about__me {
+    padding: 5vw;
 }
 
 .atout__dl {
-    padding: 2vw 5vw;
-    font-size: 1.25rem;
     border-bottom: 1px solid #333;
+    font-size: 1.1rem;
+    padding-bottom: 5vw;
 }
 
 .about__item {
@@ -425,19 +428,18 @@ About
 }
 
 .atout__dl div dt {
-    font-size: 1.17em;
     font-weight: 500;
-    width: 4.375rem;
+    width: 20%;
 }
 
 .atout__dl div dd {
-    width: 20rem;
+    width: 80%;
 }
 
 .about__text {
-    padding: 2vw 5vw;
-    line-height: 2;
-    font-size: 1.125rem;
+    padding-top: 5vw;
+    line-height: 2.2;
+    font-size: 1rem;
 }
 
 .about__flex {
@@ -449,14 +451,25 @@ About
         display: grid;
         grid-template-columns: repeat(2, minmax(100px,1fr));
         gap: 3vw;
+        padding: 5vw;
     }
     .about__imgBox {
         padding: 0;
     }
 
+    .atout__dl {
+        padding-bottom: 1vw;
+    }
+
     .about__me {
-        max-height: 792px;
+        max-height: 704px;
         margin: auto 0;
+        padding: 2vw;
+    }
+
+    .about__text {
+        padding-top: 2vw;
+        line-height: 2.5;
     }
 }
 
@@ -471,6 +484,10 @@ Works
     padding: 8vw;
 }
 
+.works__imgBox {
+    margin-bottom: 1rem;
+}
+
 .works__img {
     height: auto;
     box-shadow: 10px 10px 11px rgba(0, 0, 0, 0.25);
@@ -478,7 +495,7 @@ Works
 }
 
 .works__img:hover {
-    transform: scale(.95,.95);
+    transform: scale(.98,.98);
     /* 縮小 */
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
 }
@@ -486,6 +503,12 @@ Works
 .works__category {
     color: #727272;
     font-size: .875rem;
+}
+
+@media(min-width:769px) {
+    .works__container {
+        grid-template-columns: repeat(2, minmax(260px, 1fr));
+    }
 }
 
 /* ===========================================
@@ -500,13 +523,19 @@ Skill
     font-weight: bold;
 }
 
+.skill__mix {
+    width: 270px;
+    height: 65px;
+    vertical-align: center;
+    padding-bottom: 18px;
+}
+
 .skill__box {
     padding: 5vw;
 }
 
 .skill__box p:nth-child(2) {
     margin-bottom: 1rem;
-    font-family: "input-serif-compressed", serif;
     font-weight: 200;
     font-style: normal;
 
@@ -542,17 +571,13 @@ Skill
 /* ===========================================
 Contact
 ============================================ */
-.contact {
-    height: 100vh;
-}
-
 .contact__mailBox {
     display: block;
     padding: 8vw;
 }
 
 .contact__message {
-    font-size: 1.125rem;
+    font-size: .775rem;
 }
 
 .contact__mail {
@@ -566,12 +591,12 @@ Contact
 
 @media(min-width:769px) {
     .contact {
-        height: 100vh;
+        height: 60vh;
     }
 
     .contact__mail {
         color: #333;
-        font-size: min(5vw, 8.0rem);
+        font-size: min(5vw, 4.3rem);
 
     }
 
@@ -582,6 +607,10 @@ Contact
         transform: translateY(5px);
         transform: translatex(5px);
     }
+
+    .contact__message {
+        font-size: 1.125rem;
+    }
 }
 
 
@@ -590,7 +619,9 @@ Contact
 Footer
 ============================================ */
 footer {
-    padding: 3vw 3vw 8vw 3vw;
+    background-color: #333;
+    color: #fff;
+    padding: 3vw;
     text-align: center;
-    font-family: "input-serif-compressed", serif;
+    font-weight: 200;
 }
