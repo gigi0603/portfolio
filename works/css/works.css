@@ -344,7 +344,6 @@ h2 {
 .works__time {
     margin-top: 8px;
     display: block;
-    font-family: "input-serif-compressed", serif;
     font-weight: 200;
     font-style: normal;
 }
@@ -437,9 +436,10 @@ h2 {
 Footer
 ============================================ */
 footer {
-    padding: 3vw 3vw 8vw 3vw;
+    background-color: #333;
+    color: #fff;
+    padding: 3vw;
     text-align: center;
-    font-family: "input-serif-compressed", serif;
     font-weight: 200;
-    font-style: normal;
+    margin-top: 8vw;
 }
