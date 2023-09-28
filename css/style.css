@@ -346,8 +346,10 @@ main {
 mainvisual
 ============================================ */
 .mainvisual {
-    margin-block: 30vh;
+    margin-top: 30vh;
+    padding-bottom: 25vh;
     position: relative;
+
 }
 
 .mainvisual__box {
@@ -401,63 +403,73 @@ mainvisual
 スクロール
 ============================================ */
 /*スクロールダウン全体の場所*/
-.scrolldown4{
+.scrolldown{
+    height: 50px;
     /*描画位置※位置は適宜調整してください*/
 	position:absolute;
-	bottom: 1%;
+	bottom: 20%;
 	right:50%;
-    /*矢印の動き1秒かけて永遠にループ*/
-	animation: arrowmove 1s ease-in-out infinite;
 }
 
 /*下からの距離が変化して全体が下→上→下に動く*/
 @keyframes arrowmove{
-      0%{bottom:1%;}
-      50%{bottom:3%;}
-     100%{bottom:1%;}
+    0% {
+        height: 0;
+        top: 0;
+        opacity: 0;
+    }
+    30% {
+        height: 30px;
+        opacity: 1;
+    }
+
+    60% {
+        height: 50px;
+        opacity: 0.5;
+    }
+    
+    100% {
+        height: 0;
+        top: 80px;
+        opacity: 0;
+    }
  }
 
-/*Scrollテキストの描写*/
-.scrolldown4 span{
-    /*描画位置*/
+ /* 0%{bottom:1%;}
+ 50%{bottom:3%;}
+100%{bottom:1%;} */
 
-	position: absolute;
-	left: -20px;
-	bottom: 0px;
+
+/*Scrollテキストの描写*/
+.scrolldown span{
+    /*描画位置*/
+    width: 50px;
+    position:absolute;
+	bottom: 20px;
+	left: -40px;
+    transform: translate(-50%, -50%);
     /*テキストの形状*/
-	color: #333;
+	color: #fff;
 	font-size: 0.7rem;
-	letter-spacing: 0.05em;
-	/*縦書き設定*/
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-    text-orientation: sideways;
+	letter-spacing: 0.25em;
+    transform: rotate(90deg);
 }
 
 /* 矢印の描写 */
-.scrolldown4:before {
-    content: "";
-    /*描画位置*/
-    position: absolute;
-    bottom: 0;
-    right: -6px;
-    /*矢印の形状*/
-    width: 1px;
-    height: 20px;
-    background: #333;
-    transform: skewX(-31deg);
-}
 
-.scrolldown4:after{
+
+.scrolldown:after{
 	content:"";
     /*描画位置*/
 	position: absolute;
-	bottom:0;
-	right:0;
+	bottom: 100px;
+	left: 0;
     /*矢印の形状*/
 	width:1px;
-	height: 50px;
+	height: 80px;
 	background:#333;
+        /*矢印の動き1秒かけて永遠にループ*/
+	animation: arrowmove 1s ease-in-out infinite;
 }
 
 
@@ -567,6 +579,10 @@ Works
     font-size: .875rem;
 }
 
+.works__name {
+    font-size: 1.17rem;
+}
+
 @media(min-width:769px) {
     .works__container {
         grid-template-columns: repeat(2, minmax(260px, 1fr));
@@ -581,15 +597,15 @@ Skill
 }
 
 .skill__copy {
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: bold;
 }
 
 .skill__mix {
-    width: 270px;
-    height: 65px;
+    width: 120px;
+    height: 35px;
     vertical-align: center;
-    padding-bottom: 18px;
+    padding-bottom: 5px;
 }
 
 .skill__box {
@@ -597,16 +613,25 @@ Skill
 }
 
 .skill__box p:nth-child(2) {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     font-weight: 200;
     font-style: normal;
-
 }
 
 @media(min-width:769px) {
 
     .skill__copy {
-        font-size: 3.2rem;
+        font-size: 5rem;
+    }
+
+    .skill__mix {
+        width: 270px;
+        height: 80px;
+        padding-bottom: 18px;
+    }
+
+    .skill__comment {
+        line-height: 2.2;
     }
 }
 
@@ -626,7 +651,6 @@ Contact
     font-size: 1.375rem;
     font-weight: 700;
     letter-spacing: 0.05em;
-    text-shadow: 5px 5px 5px #727272;
     transition: 0.3s;
     display: inline-block;
 }
@@ -637,17 +661,15 @@ Contact
     }
 
     .contact__mail {
-        color: #333;
         font-size: min(5vw, 4.3rem);
-
+        color: #fff;
+        -webkit-text-stroke: 2px #333;
+        text-stroke: 2px #333;
     }
 
     .contact__mail:hover {
         opacity: 1;
         color: #333;
-        text-shadow: 0 0 0 #727272;
-        transform: translateY(5px);
-        transform: translatex(5px);
     }
 
     .contact__message {
