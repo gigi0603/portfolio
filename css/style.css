@@ -25,6 +25,7 @@ a {
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 img {
@@ -34,7 +35,7 @@ img {
 
 section {
     background-color: #fff;
-    padding: 5vw 3vw;
+    padding: 10vw 0;
 }
 
 h2 {
@@ -382,7 +383,9 @@ mainvisual
 
 @media(min-width:769px) {
     .mainvisual {
-        margin-block: 15vh;
+        margin-top: 15vh;
+        margin-bottom: 3vw;
+        padding-bottom: 8vh;
     }
 
     .mainvisual__box {
@@ -485,7 +488,7 @@ About
 }
 
 .about__me {
-    padding: 5vw;
+    padding-block: 5vw;
 }
 
 .atout__dl {
@@ -554,7 +557,7 @@ Works
 .works__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 8vw;
+    gap: 120px;
     padding: 8vw;
 }
 
@@ -586,6 +589,7 @@ Works
 @media(min-width:769px) {
     .works__container {
         grid-template-columns: repeat(2, minmax(260px, 1fr));
+        gap: 8vw;
     }
 }
 
@@ -594,6 +598,16 @@ Skill
 ============================================ */
 .skill {
     background-color: #fff;
+}
+
+.skill__box {
+    padding-block: 5vw;
+}
+
+.skill__en {
+    margin-bottom: 3rem;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .skill__copy {
@@ -608,17 +622,35 @@ Skill
     padding-bottom: 5px;
 }
 
-.skill__box {
-    padding: 5vw;
+.skill__comment {
+    line-height: 2;
 }
 
-.skill__box p:nth-child(2) {
-    margin-bottom: 3rem;
-    font-weight: 200;
-    font-style: normal;
+.skill__container {
+    line-height: 2;
+    padding-block: 3vw;
+}
+
+.skill__item:first-child {
+    margin-bottom: 60px;
+}
+
+.skill__title {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #333;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.skill__tool {
+    font-size: 0.875rem;
+    color: #727272;
 }
 
 @media(min-width:769px) {
+    .skill__box {
+        text-align: center;
+    }
 
     .skill__copy {
         font-size: 5rem;
@@ -630,8 +662,23 @@ Skill
         padding-bottom: 18px;
     }
 
-    .skill__comment {
+    .skill__comment,
+    .skill__container {
         line-height: 2.2;
+    }
+
+    .skill__container {
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+    }
+
+    .skill__item:first-child {
+        margin-bottom: 0;
+    } 
+
+    .skill__item{
+        width: 40%;
     }
 }
 
@@ -640,7 +687,7 @@ Contact
 ============================================ */
 .contact__mailBox {
     display: block;
-    padding: 8vw;
+    padding: 8vw 30px;
 }
 
 .contact__message {
