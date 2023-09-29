@@ -46,6 +46,10 @@ h2 {
     h2 {
         font-size: 80px;
     }
+
+    .wrapper {
+        padding: 0 40px;
+    }
 }
 
 /* ===========================================
@@ -653,7 +657,7 @@ Skill
     }
 
     .skill__copy {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .skill__mix {
